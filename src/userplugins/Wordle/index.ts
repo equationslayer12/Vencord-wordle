@@ -47,10 +47,8 @@ export default definePlugin({
     // Delete these two below if you are only using code patches
     start() {
         addChatBarButton("vc-wordle", WordleChatBarIcon);
-        restartNeeded: true;
     },
     stop() {
         removeChatBarButton("vc-wordle");
-        restartNeeded: true;
     },
 });
