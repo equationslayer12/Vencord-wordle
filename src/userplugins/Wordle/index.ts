@@ -5,6 +5,7 @@
  */
 
 // import { findGroupChildrenByChildId } from "@api/ContextMenu";
+
 import { ApplicationCommandInputType, ApplicationCommandOptionType, sendBotMessage } from "@api/Commands";
 import definePlugin from "@utils/types";
 import { addChatBarButton, removeChatBarButton } from "@api/ChatButtons";
@@ -20,7 +21,7 @@ export default definePlugin({
         },
         {
             id: 301976310501212161n,
-            name: "ikappyyyy"
+            name: "iKappyyyy"
         }
     ],
     dependencies: ["CommandsAPI"],
@@ -43,7 +44,9 @@ export default definePlugin({
         }
     ],
 
-    patches: [],
+    patches: [
+        // ?
+    ],
     // Delete these two below if you are only using code patches
     start() {
         addChatBarButton("vc-wordle", WordleChatBarIcon);
