@@ -1,6 +1,15 @@
-.vc-wordle-cls-1{fill:#dabc45;}
-.vc-wordle-cls-2{fill:#7bb677;}
+.vc-wordle-cls-1 {
+    fill: var(--background-secondary);
+}
 
-.vc-wordle-chat-button {
-    scale: 1;
+.vc-wordle-cls-2 {
+    fill: var(--background-secondary);
+}
+
+.vc-wordle-chat-button:hover .vc-wordle-cls-1 {
+    fill: #dabc45;
+}
+
+.vc-wordle-chat-button:hover .vc-wordle-cls-2 {
+    fill: #7bb677;
 }
