@@ -1,9 +1,9 @@
 .vc-wordle-cls-1 {
-    fill: var(--background-secondary);
+    fill: currentColor;
 }
 
 .vc-wordle-cls-2 {
-    fill: var(--background-secondary);
+    fill: currentColor;
 }
 
 .vc-wordle-chat-button:hover .vc-wordle-cls-1 {
