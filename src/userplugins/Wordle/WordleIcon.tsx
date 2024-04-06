@@ -1,5 +1,7 @@
 import { ChatBarButton } from "@api/ChatButtons";
+import { openModal } from "@utils/modal";
 import { classNameFactory } from "@api/Styles";
+import {WordleModal} from "./WordleModal"
 import { cl } from "./utils";
 import "./style.css";
 
@@ -12,7 +14,10 @@ export const WordleChatBarIcon: ChatBarButton = ({ isMainChat }) => {
       tooltip="Wordle!"
       onClick={e => {
         console.log('test');
-      }}
+        openModal(props => (
+            <WordleModal rootProps={props}/>
+        ));
+}}
     >
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 192 192"
